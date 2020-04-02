@@ -9,8 +9,8 @@ export default function ({ router, dom }) {
 
             if (editMode) return;
 
-            recordSetting.checked = true;
-            longRunningSetting.checked = true;
+            recordSetting.click();
+            longRunningSetting.click();
         });
 
     });

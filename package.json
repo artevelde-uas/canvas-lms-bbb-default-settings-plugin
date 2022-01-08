@@ -1,9 +1,11 @@
 {
   "name": "@artevelde-uas/canvas-lms-bbb-default-settings-plugin",
+  "version": "1.0.0",
   "description": "Sets default options when creating a new BigBlueButton conference",
   "keywords": [
     "Canvas LMS"
   ],
+  "license": "ISC",
   "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
   "repository": {
     "type": "git",
@@ -12,5 +14,8 @@
   "module": "src/index.js",
   "files": [
     "src/"
-  ]
+  ],
+  "peerDependencies": {
+    "@artevelde-uas/canvas-lms-app": "^1.0.0"
+  }
 }

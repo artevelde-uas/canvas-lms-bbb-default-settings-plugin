@@ -4,6 +4,7 @@
   "keywords": [
     "Canvas LMS"
   ],
+  "license": "ISC",
   "author": "Renaat De Muynck <renaat.demuynck@arteveldehs.be>",
   "repository": {
     "type": "git",

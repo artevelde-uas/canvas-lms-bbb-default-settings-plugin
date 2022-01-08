@@ -13,5 +13,8 @@
   "module": "src/index.js",
   "files": [
     "src/"
-  ]
+  ],
+  "peerDependencies": {
+    "@artevelde-uas/canvas-lms-app": "^1.0.0"
+  }
 }

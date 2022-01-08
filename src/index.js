@@ -1,13 +1,17 @@
+import { router, dom } from '@artevelde-uas/canvas-lms-app';
 
-export default function ({ router, dom }) {
-    router.addListener('courses.conferences', params => {
 
+export default function () {
+    router.onRoute('courses.conferences', params => {
         dom.onElementAdded('#web_conference_user_settings_record', recordSetting => {
-            let longRunningSetting = document.getElementById('web_conference_long_running');
+            const longRunningSetting = document.getElementById('web_conference_long_running');
+            const form = recordSetting.closest('form');
+            const editMode = form.action.match(/\/courses\/\d+\/conferences\/\d+$/) !== null;
 
-            recordSetting.checked = true;
-            longRunningSetting.checked = true;
+            if (editMode) return;
+
+            recordSetting.click();
+            longRunningSetting.click();
         });
-
     });
 }

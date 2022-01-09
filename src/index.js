@@ -31,13 +31,13 @@ export default function ({
             if (enableRecording) {
                 const recordSetting = document.getElementById('web_conference_user_settings_record');
 
-                recordSetting.click();
+                recordSetting.checked = true;
             }
 
             if (noTimeLimit) {
                 const longRunningSetting = document.getElementById('web_conference_long_running');
 
-                longRunningSetting.click();
+                longRunningSetting.checked = true;
             }
         });
     });

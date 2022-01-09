@@ -26,6 +26,7 @@ export default function ({
                 const durationSetting = document.getElementById('web_conference_duration');
 
                 durationSetting.value = duration;
+                durationSetting.dataset.restoreValue = duration;
             }
 
             if (enableRecording) {

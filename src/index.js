@@ -16,14 +16,16 @@ export default function ({
             // Don't change settings when in edit mode
             if (editMode) return;
 
-            const recordSetting = document.getElementById('web_conference_user_settings_record');
-            const longRunningSetting = document.getElementById('web_conference_long_running');
 
             if (enableRecording) {
+                const recordSetting = document.getElementById('web_conference_user_settings_record');
+
                 recordSetting.click();
             }
 
             if (noTimeLimit) {
+                const longRunningSetting = document.getElementById('web_conference_long_running');
+
                 longRunningSetting.click();
             }
         });

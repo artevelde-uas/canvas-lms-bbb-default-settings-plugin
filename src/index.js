@@ -2,6 +2,7 @@ import { router, dom } from '@artevelde-uas/canvas-lms-app';
 
 
 export default function ({
+    duration,
     enableRecording = false,
     noTimeLimit = false
 }) {
@@ -16,6 +17,13 @@ export default function ({
             // Don't change settings when in edit mode
             if (editMode) return;
 
+            if (typeof duration === 'number') {
+                if (duration < 0) throw new RangeError('Duration must be 0 or greater');
+
+                const durationSetting = document.getElementById('web_conference_duration');
+
+                durationSetting.value = duration;
+            }
 
             if (enableRecording) {
                 const recordSetting = document.getElementById('web_conference_user_settings_record');

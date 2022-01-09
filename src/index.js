@@ -14,6 +14,9 @@ export default function ({
             // Hide conference type selection since tool is now only for BBB
             conferenceType.closest('.control-group').toggleAttribute('hidden', true);
 
+            // Remove unnecessary padding
+            form.style.setProperty('padding-bottom', 0, 'important');
+
             // Don't change settings when in edit mode
             if (editMode) return;
 

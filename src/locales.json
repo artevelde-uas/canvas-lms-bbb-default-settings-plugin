@@ -1,0 +1,26 @@
+{
+    "en": {
+        "package": {
+            "title": "Change default BigBlueButton conference settings",
+            "description": "Provides several options to change the default settings when creating a new BigBlueButton conference. Also fixes some minor issues with the edit form."
+        }
+    },
+    "nl": {
+        "package": {
+            "title": "Standaardinstellingen voor BigBlueButton-conferenties wijzigen",
+            "description": "Biedt verschillende opties om de standaardinstellingen te wijzigen bij het maken van een nieuwe BigBlueButton-conferentie. Lost ook enkele kleine problemen op met het bewerkingsformulier."
+        }
+    },
+    "fr": {
+        "package": {
+            "title": "Modifier les paramètres par défaut des conférences BigBlueButton",
+            "description": "Fournit plusieurs options pour modifier les paramètres par défaut lors de la création d'une nouvelle conférence BigBlueButton. Corrige également quelques problèmes mineurs avec le formulaire d'édition."
+        }
+    },
+    "de": {
+        "package": {
+            "title": "Standardeinstellungen für BigBlueButton-Konferenzen ändern",
+            "description": "Bietet mehrere Optionen zum Ändern der Standardeinstellungen beim Erstellen einer neuen BigBlueButton-Konferenz. Behebt auch einige kleinere Probleme mit dem Bearbeitungsformular."
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@artevelde-uas/canvas-lms-bbb-default-settings-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Sets default options when creating a new BigBlueButton conference",
   "keywords": [
     "Canvas LMS"

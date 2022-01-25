@@ -23,7 +23,9 @@ export default function ({
             if (editMode) return;
 
             if (typeof duration === 'number') {
-                if (duration < 0) throw new RangeError('Duration must be 0 or greater');
+                if (duration < 0) {
+                    throw new RangeError('Duration must be 0 or greater');
+                }
 
                 const durationSetting = document.getElementById('web_conference_duration');
 
@@ -34,13 +36,13 @@ export default function ({
             if (enableRecording) {
                 const recordSetting = document.getElementById('web_conference_user_settings_record');
 
-                recordSetting.checked = true;
+                recordSetting.click();
             }
 
             if (noTimeLimit) {
                 const longRunningSetting = document.getElementById('web_conference_long_running');
 
-                longRunningSetting.checked = true;
+                longRunningSetting.click();
             }
         });
     });
